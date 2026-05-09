@@ -3,35 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="sitemap" href="/sitemap-index.xml">
+    <link rel="icon" type="image/svg+xml" href="/_astro/favicon.DgdZTxXR.jpg">
+    <link rel="mask-icon" href="/_astro/favicon.DgdZTxXR.jpg" color="#8D46E7">
+    <link rel="apple-touch-icon" sizes="180x180" href="/_astro/favicon.DgdZTxXR.jpg">
     <title>NeshTech Solutions</title>
     <meta name="description" content="NeshTech Solutions | Web Developers | Graphic Designers | AI Content Producers.">
     <meta name="robots" content="index,follow">
-    <link rel="caonical" href="https://neshtechsolutions.com">
-    <meta property="og:title" content="NeshTech Solutions">
-    <meta property="og:description" content="NeshTech Solutions">
-    <meta property="og:url" content="https://neshtechsolutions.com">
-    <meta property="og:type" content="website">
-    <link rel="icon" type="image/svg+xml" href="/_astro/favicon.DgdZTxXR.jpg"></head>
+    <link rel="canonical" href="https://neshtechsolutions.com">
+    <style>
+        :root {
+            --aw-font-sans: 'Inter Variable';
+            --aw-font-serif: 'Inter Variable';
+            --aw-font-heading: 'Inter Variable';
+            --aw-color-primary: rgb(1 97 239);
+            --aw-color-secondary: rgb(1 84 207);
+            --aw-color-accent: rgb(109 40 217);
+            --aw-color-text-heading: rgb(0 0 0);
+            --aw-color-text-default: rgb(16 16 16);
+            --aw-color-text-muted: rgb(16 16 16 / 66%);
+            --aw-color-bg-page: rgb(255 255 255);
+            --aw-color-bg-page-dark: rgb(3 6 32);
+        }
+        .dark {
+            --aw-color-text-heading: rgb(247, 248, 248);
+            --aw-color-text-default: rgb(229 236 246);
+            --aw-color-text-muted: rgb(229 236 246 / 66%);
+            --aw-color-bg-page: rgb(3 6 32);
+        }
+    </style>
+    <script>
+        (function() {
+            const defaultTheme = "system";
+            if ((defaultTheme && defaultTheme.endsWith(':only')) || (!localStorage.theme && defaultTheme !== 'system')) {
+                if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                    document.documentElement.classList.add('dark');
+                }
+            } else if (localStorage.theme === 'dark' || window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                document.documentElement.classList.add('dark');
+            }
+        })();
+    </script>
+</head>
 <body class="antialiased text-default bg-page tracking-tight">
-    <header>
-        <div class="max-wM·Xxl mx-auto px-6">
-            <a href="/">
-                <img src="/assets/images/favicon.jpg" class="h-7 w-7 rounded-full">
-                <span class="m-2 text-2xlmd:text-xl font-bold text-blue-600">NeshTech Solutions</span>
+    <header class="sticky top-0 z-40 px-3 py-3 md:px-6 mx-auto w-full max-w-7xl">
+        <nav class="flex justify-between items-center">
+            <a class="flex items-center" href="/">
+                <img class="h-7 w-7 rounded-full" src="/assets/images/favicon.jpg">
+                <span class="self-center ml-2 text-2xl md:text-xl font-bold text-blue-600 dark:text-white">
+                    NeshTech Solutions
+                </span>
             </a>
-            <div class="flex gap-4">
-                <a href="https://x.com/munenemithamo">@</a>
-                <a href="mailto:munenemithamo@gmail.com">Email</a>
-                <a href="tel:+254722419094">Call</a>
+            <div class="hidden md:flex items-center gap-4">
+                <a class="hover:text-blue-700" href="https://x.com/munenemithamo">X</a>
+                <a class="hover:text-blue-700" href="https://www.linkedin.com/in/charles-munene-915a61112">LinkedIn</a>
+                <a class="hover:text-blue-700" href="mailto:munenemithamo@gmail.com">Email</a>
+                <a class="hover:text-blue-700" href="tel:+254722419094">Call</a>
+                <a class="hover:text-blue-700" href="https://api.whatsapp.com/send/?phone=254722419094">WhatsApp</a>
             </div>
-        </div>
+        </nav tabl>
     </header>
     <main>
-        <section>
-            <div class="max-wM·Xxl mx-auto px-6">
-                <h1>Welcome to NeshTech Solutions</h1>
-                <p>We create scalable tech solutions for various business models.</p>
-                <a href="https://api.whatsapp.com/send/?phone=254722419094">Chat With Us</a>
+        <div class="relative m-auto max-w-5xl px-3 md:px-6">
+            <img src="/_astro/techskills.B-d9H_zs.jpg" class="mx-auto rounded-md w-full" alt="techskills">
+        </div>
+        <section class="py-12 md:py-20">
+            <div class="relative max-w-7xl mx-auto px-4 sm:px-6">
+                <div class="text-center pb-10 md:pb-16 max-w-5xl mx-auto">
+                    <h1 class="text-5xl md:text-6xl font-bold leading-tighter tracking-tighter mb-4">
+                        Welcome to <span class="text-accent">NeshTech Solutions.</span><br>
+                        We create scalable tech solutions for various business models.
+                    </h1>
+                    <p class="text-xl text-muted mb-6">
+                        We have worked with many corporations, businesses and professionals to deliver software solutions that include Company Branding websites, Professional Portfolios, Customized AI Content, UI/UX solutions, Mobile Apps, eCommerce sites, Landing Pages, Personal Blogs, Marketing websites, SaAs web applications, Cybersecurity solutions & other tech products.
+                    </p>
+                    <div class="flex sm:justify-center gap-4">
+                        <a class="btn-primary" href="https://api.whatsapp.com/send/?phone=254722419094">Chat With Us</a>
+                        <a class="btn-secondary" href="tel:+254722419094">Call Us</a>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
